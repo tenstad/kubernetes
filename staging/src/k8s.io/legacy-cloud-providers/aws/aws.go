@@ -169,7 +169,7 @@ const ServiceAnnotationLoadBalancerSSLPorts = "service.beta.kubernetes.io/aws-lo
 
 // ServiceAnnotationLoadBalancerSSLNegotiationPolicy is the annotation used on
 // the service to specify a SSL negotiation settings for the HTTPS/SSL listeners
-// of your load balancer. Defaults to AWS's default
+// of your load balancer. Defaults to AWS's default.
 const ServiceAnnotationLoadBalancerSSLNegotiationPolicy = "service.beta.kubernetes.io/aws-load-balancer-ssl-negotiation-policy"
 
 // ServiceAnnotationLoadBalancerBEProtocol is the annotation used on the service
@@ -198,8 +198,8 @@ const ServiceAnnotationLoadBalancerHealthCheckProtocol = "service.beta.kubernete
 const ServiceAnnotationLoadBalancerHealthCheckPort = "service.beta.kubernetes.io/aws-load-balancer-healthcheck-port"
 
 // ServiceAnnotationLoadBalancerHealthCheckPath is the annotation used on the service to
-// specify the path for the ELB health check when the health check protocol is HTTP/HTTPS
-// Defaults to /healthz if externalTrafficPolicy is Local, / otherwise
+// specify the path for the ELB health check when the health check protocol is HTTP/HTTPS.
+// Defaults to /healthz if externalTrafficPolicy is Local, / otherwise.
 const ServiceAnnotationLoadBalancerHealthCheckPath = "service.beta.kubernetes.io/aws-load-balancer-healthcheck-path"
 
 // ServiceAnnotationLoadBalancerHCHealthyThreshold is the annotation used on

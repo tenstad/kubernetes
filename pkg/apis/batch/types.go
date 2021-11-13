@@ -137,7 +137,7 @@ type JobSpec struct {
 	ActiveDeadlineSeconds *int64
 
 	// Optional number of retries before marking this job failed.
-	// Defaults to 6
+	// Defaults to 6.
 	// +optional
 	BackoffLimit *int32
 

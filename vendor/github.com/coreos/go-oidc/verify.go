@@ -96,7 +96,7 @@ type Config struct {
 	// this option.
 	SkipIssuerCheck bool
 
-	// Time function to check Token expiry. Defaults to time.Now
+	// Time function to check Token expiry. Defaults to time.Now.
 	Now func() time.Time
 }
 

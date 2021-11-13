@@ -642,7 +642,7 @@ type HostPathVolumeSource struct {
 	// More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
 	Path string `json:"path" protobuf:"bytes,1,opt,name=path"`
 	// Type for HostPath Volume
-	// Defaults to ""
+	// Defaults to "".
 	// More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
 	// +optional
 	Type *HostPathType `json:"type,omitempty" protobuf:"bytes,2,opt,name=type"`
@@ -997,13 +997,13 @@ type QuobyteVolumeSource struct {
 	// +optional
 	ReadOnly bool `json:"readOnly,omitempty" protobuf:"varint,3,opt,name=readOnly"`
 
-	// User to map volume access to
-	// Defaults to serivceaccount user
+	// User to map volume access to.
+	// Defaults to serivceaccount user.
 	// +optional
 	User string `json:"user,omitempty" protobuf:"bytes,4,opt,name=user"`
 
-	// Group to map volume access to
-	// Default is no group
+	// Group to map volume access to.
+	// Default is no group.
 	// +optional
 	Group string `json:"group,omitempty" protobuf:"bytes,5,opt,name=group"`
 
@@ -1619,7 +1619,7 @@ type ServiceAccountTokenProjection struct {
 	// account token. As the token approaches expiration, the kubelet volume
 	// plugin will proactively rotate the service account token. The kubelet will
 	// start trying to rotate the token if the token is older than 80 percent of
-	// its time to live or if the token is older than 24 hours.Defaults to 1 hour
+	// its time to live or if the token is older than 24 hours. Defaults to 1 hour
 	// and must be at least 10 minutes.
 	//+optional
 	ExpirationSeconds *int64 `json:"expirationSeconds,omitempty" protobuf:"varint,2,opt,name=expirationSeconds"`
@@ -3887,7 +3887,7 @@ type ReplicationControllerSpec struct {
 
 	// Minimum number of seconds for which a newly created pod should be ready
 	// without any of its container crashing, for it to be considered available.
-	// Defaults to 0 (pod will be considered available as soon as it is ready)
+	// Defaults to 0 (pod will be considered available as soon as it is ready).
 	// +optional
 	MinReadySeconds int32 `json:"minReadySeconds,omitempty" protobuf:"varint,4,opt,name=minReadySeconds"`
 

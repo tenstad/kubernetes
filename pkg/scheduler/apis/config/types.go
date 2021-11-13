@@ -49,7 +49,7 @@ type KubeSchedulerConfiguration struct {
 	// (2) writing config to a file, (3) initialising the scheduler.
 	metav1.TypeMeta
 
-	// Parallelism defines the amount of parallelism in algorithms for scheduling a Pods. Must be greater than 0. Defaults to 16
+	// Parallelism defines the amount of parallelism in algorithms for scheduling a Pods. Must be greater than 0. Defaults to 16.
 	Parallelism int32
 
 	// LeaderElection defines the configuration of leader election client.

@@ -268,7 +268,7 @@ type PersistentVolumeSource struct {
 type PersistentVolumeClaimVolumeSource struct {
 	// ClaimName is the name of a PersistentVolumeClaim in the same namespace as the pod using this volume
 	ClaimName string
-	// Optional: Defaults to false (read/write).  ReadOnly here
+	// Optional: Defaults to false (read/write). ReadOnly here
 	// will force the ReadOnly setting in VolumeMounts
 	// +optional
 	ReadOnly bool
@@ -596,7 +596,7 @@ const (
 type HostPathVolumeSource struct {
 	// If the path is a symlink, it will follow the link to the real path.
 	Path string
-	// Defaults to ""
+	// Defaults to "".
 	Type *HostPathType
 }
 
@@ -975,13 +975,13 @@ type QuobyteVolumeSource struct {
 	// +optional
 	ReadOnly bool
 
-	// User to map volume access to
-	// Defaults to the root user
+	// User to map volume access to.
+	// Defaults to the root user.
 	// +optional
 	User string
 
-	// Group to map volume access to
-	// Default is no group
+	// Group to map volume access to.
+	// Defaults to no group.
 	// +optional
 	Group string
 
@@ -2809,7 +2809,7 @@ type PodSpec struct {
 	// +optional
 	NodeName string
 	// SecurityContext holds pod-level security attributes and common container settings.
-	// Optional: Defaults to empty.  See type description for default values of each field.
+	// Optional: Defaults to empty. See type description for default values of each field.
 	// +optional
 	SecurityContext *PodSecurityContext
 	// ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec.
@@ -3414,7 +3414,7 @@ type ReplicationControllerSpec struct {
 
 	// Minimum number of seconds for which a newly created pod should be ready
 	// without any of its container crashing, for it to be considered available.
-	// Defaults to 0 (pod will be considered available as soon as it is ready)
+	// Defaults to 0 (pod will be considered available as soon as it is ready).
 	// +optional
 	MinReadySeconds int32
 

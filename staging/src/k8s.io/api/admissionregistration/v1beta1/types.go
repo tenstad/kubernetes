@@ -230,7 +230,7 @@ type ValidatingWebhook struct {
 	// and "rules" only included `apiGroups:["apps"], apiVersions:["v1"], resources: ["deployments"]`,
 	// a request to apps/v1beta1 or extensions/v1beta1 would be converted to apps/v1 and sent to the webhook.
 	//
-	// Defaults to "Exact"
+	// Defaults to "Exact".
 	// +optional
 	MatchPolicy *MatchPolicyType `json:"matchPolicy,omitempty" protobuf:"bytes,9,opt,name=matchPolicy,casttype=MatchPolicyType"`
 
@@ -362,7 +362,7 @@ type MutatingWebhook struct {
 	// and "rules" only included `apiGroups:["apps"], apiVersions:["v1"], resources: ["deployments"]`,
 	// a request to apps/v1beta1 or extensions/v1beta1 would be converted to apps/v1 and sent to the webhook.
 	//
-	// Defaults to "Exact"
+	// Defaults to "Exact".
 	// +optional
 	MatchPolicy *MatchPolicyType `json:"matchPolicy,omitempty" protobuf:"bytes,9,opt,name=matchPolicy,casttype=MatchPolicyType"`
 

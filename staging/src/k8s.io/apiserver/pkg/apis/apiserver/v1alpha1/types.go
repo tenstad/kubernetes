@@ -158,7 +158,7 @@ type TracingConfiguration struct {
 	// Endpoint of the collector that's running on the control-plane node.
 	// The APIServer uses the egressType ControlPlane when sending data to the collector.
 	// The syntax is defined in https://github.com/grpc/grpc/blob/master/doc/naming.md.
-	// Defaults to the otlpgrpc default, localhost:4317
+	// Defaults to the otlpgrpc default, localhost:4317.
 	// The connection is insecure, and does not support TLS.
 	Endpoint *string `json:"endpoint,omitempty" protobuf:"bytes,1,opt,name=endpoint"`
 

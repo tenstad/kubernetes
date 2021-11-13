@@ -364,7 +364,7 @@ type ListOptions struct {
 	// See https://kubernetes.io/docs/reference/using-api/api-concepts/#resource-versions for
 	// details.
 	//
-	// Defaults to unset
+	// Defaults to unset.
 	// +optional
 	ResourceVersion string `json:"resourceVersion,omitempty" protobuf:"bytes,4,opt,name=resourceVersion"`
 
@@ -374,7 +374,7 @@ type ListOptions struct {
 	// See https://kubernetes.io/docs/reference/using-api/api-concepts/#resource-versions for
 	// details.
 	//
-	// Defaults to unset
+	// Defaults to unset.
 	// +optional
 	ResourceVersionMatch ResourceVersionMatch `json:"resourceVersionMatch,omitempty" protobuf:"bytes,10,opt,name=resourceVersionMatch,casttype=ResourceVersionMatch"`
 	// Timeout for the list/watch call.
@@ -445,7 +445,7 @@ type GetOptions struct {
 	// See https://kubernetes.io/docs/reference/using-api/api-concepts/#resource-versions for
 	// details.
 	//
-	// Defaults to unset
+	// Defaults to unset.
 	// +optional
 	ResourceVersion string `json:"resourceVersion,omitempty" protobuf:"bytes,1,opt,name=resourceVersion"`
 	// +k8s:deprecated=includeUninitialized,protobuf=2
