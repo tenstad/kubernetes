@@ -316,7 +316,7 @@ message GetOptions {
   // See https://kubernetes.io/docs/reference/using-api/api-concepts/#resource-versions for
   // details.
   //
-  // Defaults to unset
+  // Defaults to unset.
   // +optional
   optional string resourceVersion = 1;
 }
@@ -506,7 +506,7 @@ message ListOptions {
   // See https://kubernetes.io/docs/reference/using-api/api-concepts/#resource-versions for
   // details.
   //
-  // Defaults to unset
+  // Defaults to unset.
   // +optional
   optional string resourceVersion = 4;
 
@@ -516,7 +516,7 @@ message ListOptions {
   // See https://kubernetes.io/docs/reference/using-api/api-concepts/#resource-versions for
   // details.
   //
-  // Defaults to unset
+  // Defaults to unset.
   // +optional
   optional string resourceVersionMatch = 10;
 

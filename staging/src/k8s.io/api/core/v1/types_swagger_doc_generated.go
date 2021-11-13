@@ -819,7 +819,7 @@ func (HostAlias) SwaggerDoc() map[string]string {
 var map_HostPathVolumeSource = map[string]string{
 	"":     "Represents a host path mapped into a pod. Host path volumes do not support ownership management or SELinux relabeling.",
 	"path": "Path of the directory on the host. If the path is a symlink, it will follow the link to the real path. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath",
-	"type": "Type for HostPath Volume Defaults to \"\" More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath",
+	"type": "Type for HostPath Volume Defaults to \"\". More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath",
 }
 
 func (HostPathVolumeSource) SwaggerDoc() map[string]string {
@@ -1818,8 +1818,8 @@ var map_QuobyteVolumeSource = map[string]string{
 	"registry": "Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes",
 	"volume":   "Volume is a string that references an already created Quobyte volume by name.",
 	"readOnly": "ReadOnly here will force the Quobyte volume to be mounted with read-only permissions. Defaults to false.",
-	"user":     "User to map volume access to Defaults to serivceaccount user",
-	"group":    "Group to map volume access to Default is no group",
+	"user":     "User to map volume access to. Defaults to serivceaccount user.",
+	"group":    "Group to map volume access to. Default is no group.",
 	"tenant":   "Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin",
 }
 
@@ -1907,7 +1907,7 @@ func (ReplicationControllerList) SwaggerDoc() map[string]string {
 var map_ReplicationControllerSpec = map[string]string{
 	"":                "ReplicationControllerSpec is the specification of a replication controller.",
 	"replicas":        "Replicas is the number of desired replicas. This is a pointer to distinguish between explicit zero and unspecified. Defaults to 1. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#what-is-a-replicationcontroller",
-	"minReadySeconds": "Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready)",
+	"minReadySeconds": "Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready).",
 	"selector":        "Selector is a label query over pods that should match the Replicas count. If Selector is empty, it is defaulted to the labels present on the Pod template. Label keys and values that must match in order to be controlled by this replication controller, if empty defaulted to labels on Pod template. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors",
 	"template":        "Template is the object that describes the pod that will be created if insufficient replicas are detected. This takes precedence over a TemplateRef. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#pod-template",
 }
@@ -2209,7 +2209,7 @@ func (ServiceAccountList) SwaggerDoc() map[string]string {
 var map_ServiceAccountTokenProjection = map[string]string{
 	"":                  "ServiceAccountTokenProjection represents a projected service account token volume. This projection can be used to insert a service account token into the pods runtime filesystem for use against APIs (Kubernetes API Server or otherwise).",
 	"audience":          "Audience is the intended audience of the token. A recipient of a token must identify itself with an identifier specified in the audience of the token, and otherwise should reject the token. The audience defaults to the identifier of the apiserver.",
-	"expirationSeconds": "ExpirationSeconds is the requested duration of validity of the service account token. As the token approaches expiration, the kubelet volume plugin will proactively rotate the service account token. The kubelet will start trying to rotate the token if the token is older than 80 percent of its time to live or if the token is older than 24 hours.Defaults to 1 hour and must be at least 10 minutes.",
+	"expirationSeconds": "ExpirationSeconds is the requested duration of validity of the service account token. As the token approaches expiration, the kubelet volume plugin will proactively rotate the service account token. The kubelet will start trying to rotate the token if the token is older than 80 percent of its time to live or if the token is older than 24 hours. Defaults to 1 hour and must be at least 10 minutes.",
 	"path":              "Path is the path relative to the mount point of the file to project the token into.",
 }
 

@@ -312,7 +312,7 @@ message DeploymentSpec {
 
   // Minimum number of seconds for which a newly created pod should be ready
   // without any of its container crashing, for it to be considered available.
-  // Defaults to 0 (pod will be considered available as soon as it is ready)
+  // Defaults to 0 (pod will be considered available as soon as it is ready).
   // +optional
   optional int32 minReadySeconds = 5;
 
@@ -1039,7 +1039,7 @@ message ReplicaSetSpec {
 
   // Minimum number of seconds for which a newly created pod should be ready
   // without any of its container crashing, for it to be considered available.
-  // Defaults to 0 (pod will be considered available as soon as it is ready)
+  // Defaults to 0 (pod will be considered available as soon as it is ready).
   // +optional
   optional int32 minReadySeconds = 4;
 

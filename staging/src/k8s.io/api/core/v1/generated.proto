@@ -1765,7 +1765,7 @@ message HostPathVolumeSource {
   optional string path = 1;
 
   // Type for HostPath Volume
-  // Defaults to ""
+  // Defaults to "".
   // More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
   // +optional
   optional string type = 2;
@@ -4025,13 +4025,13 @@ message QuobyteVolumeSource {
   // +optional
   optional bool readOnly = 3;
 
-  // User to map volume access to
-  // Defaults to serivceaccount user
+  // User to map volume access to.
+  // Defaults to serivceaccount user.
   // +optional
   optional string user = 4;
 
-  // Group to map volume access to
-  // Default is no group
+  // Group to map volume access to.
+  // Default is no group.
   // +optional
   optional string group = 5;
 
@@ -4223,7 +4223,7 @@ message ReplicationControllerSpec {
 
   // Minimum number of seconds for which a newly created pod should be ready
   // without any of its container crashing, for it to be considered available.
-  // Defaults to 0 (pod will be considered available as soon as it is ready)
+  // Defaults to 0 (pod will be considered available as soon as it is ready).
   // +optional
   optional int32 minReadySeconds = 4;
 
@@ -4848,7 +4848,7 @@ message ServiceAccountTokenProjection {
   // account token. As the token approaches expiration, the kubelet volume
   // plugin will proactively rotate the service account token. The kubelet will
   // start trying to rotate the token if the token is older than 80 percent of
-  // its time to live or if the token is older than 24 hours.Defaults to 1 hour
+  // its time to live or if the token is older than 24 hours. Defaults to 1 hour
   // and must be at least 10 minutes.
   // +optional
   optional int64 expirationSeconds = 2;

@@ -193,7 +193,7 @@ message JobSpec {
   optional int64 activeDeadlineSeconds = 3;
 
   // Specifies the number of retries before marking this job failed.
-  // Defaults to 6
+  // Defaults to 6.
   // +optional
   optional int32 backoffLimit = 7;
 
